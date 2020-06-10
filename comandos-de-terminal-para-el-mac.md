@@ -1,7 +1,7 @@
 # Comandos de terminal para el Mac
 #ayuda/técnico 
 ## Desactivar las copias “time Machine” locales del portátil
-[Faq-Mac (fuente)](http://www.faq-mac.com/2017/02/desactivar-las-copia-de-seguridad-locales-de-time-machine-en-portatiles/)
+[Faq-Mac (fuente)](http://www.faq-mac.com/2017/02/desactivar-las-copia-de-seguridad-locales-de-time-machine-en-portatiles/)  
 *Ha dejado de funcionar en High Sierra para adelante*  
 Para ello abre el Terminal y usa el comando:  
 sudo tmutil disablelocal  
@@ -23,38 +23,37 @@ A veces está dentro de la carpeta /Volumes/.MobileBackup o un nombre extraño (
 - - - -
 ## Activar el modo dark-mode en High Sierra
 Activar:  
-`defaults write -g NSWindowDarkChocolate -bool TRUE`
-Sal de tu usuario y vuelve a entrar
+`defaults write -g NSWindowDarkChocolate -bool TRUE`  
+Sal de tu usuario y vuelve a entrar  
 Desactivar:  
-`defaults write -g NSWindowDarkChocolate -bool FALSE`
+`defaults write -g NSWindowDarkChocolate -bool FALSE`  
 Reinicia el Mac  
 - - - -
 ## Ejecutar un Applescript 
-`$osascript applescript.scpt`
+`$osascript applescript.scpt`  
 - - - -
 ## Instalador de Brew para Terminal. Instalas paquetes desde terminal
 ### Instalar HomeBrew
-[HomeBrew WEB](https://brew.sh/)
+[HomeBrew WEB](https://brew.sh/)  
 ``` 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 ```
 
 ### Brew Cask
 Ayuda en: [Snazzy Labs](https://pastebin.com/jV9XzPrs) También en su canal de YouTube  
-`$brew cask`
+`$brew cask`  
 Instala paquetes y programas desde la linea de comandos. Útil para programas multiplataforma  
-[En Github](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
+[En Github](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)  
 
 Instalar paquete  
-`$brew cask Install <paquete>`
+`$brew cask Install <paquete>`  
 
 Lo he usado para instalar los Quicklook Vista rápida de algunas extensiones que no se veían.  
-[En Github](https://github.com/sindresorhus/quick-look-plugins/blob/master/readme.md)
+[En Github](https://github.com/sindresorhus/quick-look-plugins/blob/master/readme.md)  
 #### Activar vista previa de WebP
-`brew cask install WebPQuickLook`
+`brew cask install WebPQuickLook`  
 #### Ver la velocidad de internet
-**Speedtest**
+**Speedtest**  
 //Install Speedtest         
 `brew install speedtest-cli`  
 Run:  
