@@ -14,20 +14,20 @@ sudo rm -rfv /.MobileBackups/
 A veces está dentro de la carpeta /Volumes/.MobileBackup o un nombre extraño (mira dentro)
 - - - -
 ## Cambiar la extensión y la localización de las Capturas de Pantalla
-- Cambiar la extensión
+- Cambiar la extensión  
 `defaults write com.apple.screencapture type jpg`
 `killall SystemUIServer`
-- Cambiar la ubicación, cambia /Pictures por el directorio que quieras.
+- Cambiar la ubicación, cambia /Pictures por el directorio que quieras.  
 `defaults write com.apple.screencapture location ~/Pictures`
 `killall SystemUIServer`
 - - - -
 ## Activar el modo dark-mode en High Sierra
-Activar:
+Activar:  
 `defaults write -g NSWindowDarkChocolate -bool TRUE`
 Sal de tu usuario y vuelve a entrar
-Desactivar:
+Desactivar:  
 `defaults write -g NSWindowDarkChocolate -bool FALSE`
-Reinicia el Mac
+Reinicia el Mac  
 - - - -
 ## Ejecutar un Applescript 
 `$osascript applescript.scpt`
@@ -41,24 +41,24 @@ Reinicia el Mac
 ```
 
 ### Brew Cask
-Ayuda en: [Snazzy Labs](https://pastebin.com/jV9XzPrs) También en su canal de YouTube
+Ayuda en: [Snazzy Labs](https://pastebin.com/jV9XzPrs) También en su canal de YouTube  
 `$brew cask`
-Instala paquetes y programas desde la linea de comandos. Útil para programas multiplataforma
+Instala paquetes y programas desde la linea de comandos. Útil para programas multiplataforma  
 [En Github](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
 
-Instalar paquete
+Instalar paquete  
 `$brew cask Install <paquete>`
 
-Lo he usado para instalar los Quicklook Vista rápida de algunas extensiones que no se veían.
-[En Githup](https://github.com/sindresorhus/quick-look-plugins/blob/master/readme.md)
+Lo he usado para instalar los Quicklook Vista rápida de algunas extensiones que no se veían.  
+[En Github](https://github.com/sindresorhus/quick-look-plugins/blob/master/readme.md)
 #### Activar vista previa de WebP
 `brew cask install WebPQuickLook`
 #### Ver la velocidad de internet
 **Speedtest**
 //Install Speedtest         
-`brew install speedtest-cli`
-Run:
-`speedtest-cli`
+`brew install speedtest-cli`  
+Run:  
+`speedtest-cli`  
 
 
 
