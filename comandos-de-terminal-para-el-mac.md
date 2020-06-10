@@ -15,22 +15,22 @@ A veces está dentro de la carpeta /Volumes/.MobileBackup o un nombre extraño (
 - - - -
 ## Cambiar la extensión y la localización de las Capturas de Pantalla
 - Cambiar la extensión
-defaults write com.apple.screencapture type jpg
-killall SystemUIServer
+`defaults write com.apple.screencapture type jpg`
+`killall SystemUIServer`
 - Cambiar la ubicación, cambia /Pictures por el directorio que quieras.
-defaults write com.apple.screencapture location ~/Pictures
-killall SystemUIServer
+`defaults write com.apple.screencapture location ~/Pictures`
+`killall SystemUIServer`
 - - - -
 ## Activar el modo dark-mode en High Sierra
 Activar:
-defaults write -g NSWindowDarkChocolate -bool TRUE
+`defaults write -g NSWindowDarkChocolate -bool TRUE`
 Sal de tu usuario y vuelve a entrar
 Desactivar:
-defaults write -g NSWindowDarkChocolate -bool FALSE
+`defaults write -g NSWindowDarkChocolate -bool FALSE`
 Reinicia el Mac
 - - - -
 ## Ejecutar un Applescript 
-$osascript applescript.scpt
+`$osascript applescript.scpt`
 - - - -
 ## Instalador de Brew para Terminal. Instalas paquetes desde terminal
 ### Instalar HomeBrew
@@ -42,27 +42,29 @@ $osascript applescript.scpt
 
 ### Brew Cask
 Ayuda en: [Snazzy Labs](https://pastebin.com/jV9XzPrs) También en su canal de YouTube
-$brew cask
+`$brew cask`
 Instala paquetes y programas desde la linea de comandos. Útil para programas multiplataforma
 [En Github](https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md)
 
 Instalar paquete
-$brew cask Install <paquete>
+`$brew cask Install <paquete>`
 
 Lo he usado para instalar los Quicklook Vista rápida de algunas extensiones que no se veían.
 [En Githup](https://github.com/sindresorhus/quick-look-plugins/blob/master/readme.md)
 #### Activar vista previa de WebP
-brew cask install WebPQuickLook
+`brew cask install WebPQuickLook`
 #### Ver la velocidad de internet
- **SPEEDTEST**
-	1. //Install Speedtest         brew install speedtest-cli
-	2. Run:                        speedtest-cli
+**Speedtest**
+//Install Speedtest         
+`brew install speedtest-cli`
+Run:
+`speedtest-cli`
 
 
 
 
 ### Activar selección de texto en la vista previa
-``` c
+``` 
 defaults write com.apple.finder QLEnableTextSelection -bool true; killall Finder
 ```
 
